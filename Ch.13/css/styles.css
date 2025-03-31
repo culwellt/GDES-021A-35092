@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 75px;
+  font-size: 25px;
+}
+
+li {
+  display: inline;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: darkorange;
+}
+
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+a:active {
+  color: darkseagreen;
+}
+
+h1 {
+  font-size: 50px;
+  border-top: 5px solid whitesmoke;
+  border-bottom: 5px solid whitesmoke;
+  padding: 20px;
+  text-align: center;
+  margin: 5% 20%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+}
+
+img {
+  display: block;
+  margin: auto;
+  box-shadow: 5px 5px 5px 5px #777777;
+}
+
+div {
+  padding: 20px;
+  height: 400px;
+  width: 400px;
+  text-align: center;
+  border-radius: 10px 60px;
+  margin-bottom: 20px;
+  background-color: aquamarine;
+}
+
+p#first {
+  font-size: 20px;
+  text-align: center;
+}
+
+.not-nav {
+  list-style-type: none;
+}
+
+p.aboutme {
+  background-color: rgb(144, 140, 140);
+  color: rgba(224, 241, 255, 0.943);
+  color: rgb(224, 241, 255);
+  /* I forgot to include a backup 'rgb' color in the previous assignment */
+  font-family: Winky Sans, sans-serif;
+  text-shadow: 2px 2px 4px #000;
+}
+
+/************************ iPad ************************/
+@media (min-width: 481px) and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+  img {
+    height: 400px;
+    width: 286px;
+  }
+  div {
+    height: 350px;
+    width: 350px;
+  }
+  p#first {
+    font-size: 15px;
+  }
+}
+
+/************************ Mobile ************************/
+@media (max-width: 480px) {
+  h1 {
+    font-size: 25px;
+  }
+  img {
+    height: 250px;
+    width: 179px;
+  }
+  div {
+    height: 275px;
+    width: 275px;
+  }
+  p#first {
+    font-size: 12px;
+  }
+}
