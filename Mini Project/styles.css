@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+h3,
+p {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  margin: 5px;
+  color: black;
+}
+
+body {
+  margin: 2.5%;
+  background-color: lightgray;
+}
+
+header,
+footer {
+  float: left;
+  width: 100%;
+  border: 2px solid violet;
+  background-color: lightcoral;
+}
+
+.floating {
+  float: left;
+  border: 2px solid violet;
+  background-color: lightgreen;
+  padding: 5px 0;
+  height: 205px;
+}
+
+.div1 {border-left-width: 2px;}
+
+.div4 {border-right-width: 2px;}
+
+.div1,
+.div4 {
+  width: 15%;
+}
+
+.div2,
+.div3 {
+  width: 35%;
+}
+/************************ Tablet ************************/
+@media (min-width: 581px) and (max-width: 868px) {
+  h3 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 0.875em;
+  }
+
+  header,
+  footer {
+    background-color: lightsalmon;
+  }
+
+  .floating {
+    background-color: aquamarine;
+    height: 125px;
+  }
+
+  .div1,
+  .div4 {
+    width: 25%;
+  }
+
+  .div2,
+  .div3 {
+    width: 75%;
+  }
+
+  /* .div3,
+  .div4 {
+    float: right !important;
+  } */
+}
+/************************ Mobile ************************/
+@media (max-width: 580px) {
+  h3 {
+    font-size: 0.875em;
+  }
+
+  p {
+    font-size: 0.75em;
+  }
+
+  header,
+  footer {
+    background-color: orange;
+  }
+
+  .floating {
+    background-color: lightblue;
+  }
+
+  .div1,
+  .div4 {
+    width: 100%;
+    height: 60px;
+  }
+
+  .div2,
+  .div3 {
+    width: 50%;
+    height: 155px;
+  }
+}
