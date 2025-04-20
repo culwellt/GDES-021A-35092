@@ -15,7 +15,7 @@ p {
 }
 
 body {
-  margin: 2.5%;
+  margin: 25px;
   background-color: lightgray;
 }
 
@@ -34,10 +34,6 @@ footer {
   padding: 5px 0;
   height: 205px;
 }
-
-.div1 {border-left-width: 2px;}
-
-.div4 {border-right-width: 2px;}
 
 .div1,
 .div4 {
