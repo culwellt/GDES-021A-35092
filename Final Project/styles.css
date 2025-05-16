@@ -21,7 +21,8 @@ body,
 
 h1,
 p,
-h3 {
+h3,
+form {
   text-align: center;
 }
 
@@ -57,7 +58,9 @@ img {
   justify-content: space-evenly;
 }
 
-.div25 img {aspect-ratio: 1/1;}
+.div25 img {
+  aspect-ratio: 1/1;
+}
 
 .div50 {
   width: 50%;
@@ -68,6 +71,24 @@ img {
 .div50 img {
   aspect-ratio: 5/3;
   border: solid;
+}
+
+iframe {
+  border: solid;
+}
+
+.wrapper {
+  position: relative;
+  padding-bottom: 60%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /************************ Tablet ************************/
