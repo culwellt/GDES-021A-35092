@@ -39,8 +39,7 @@ img {
   max-width: 100%;
 }
 
-.longbyshort,
-.equidistant {
+.longbyshort {
   display: flex;
   flex-direction: row;
 }
@@ -58,8 +57,16 @@ img {
   justify-content: space-evenly;
 }
 
+.div25 img {aspect-ratio: 1/1;}
+
 .div50 {
   width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.div50 img {
+  aspect-ratio: 5/3;
   border: solid;
 }
 
@@ -82,7 +89,7 @@ img {
     font-size: 1em;
   }
   h3 {
-    font-size: .75em;
+    font-size: 0.75em;
   }
   p {
     font-size: 0.625em;
