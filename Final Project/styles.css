@@ -1,0 +1,90 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: aliceblue;
+}
+
+body {
+  margin: 0% 10%;
+  background-color: azure;
+}
+
+body,
+#main {
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+p,
+h3 {
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+}
+
+img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+
+.longbyshort,
+.equidistant {
+  display: flex;
+  flex-direction: row;
+}
+
+.div75 {
+  width: 75%;
+  border: solid;
+}
+
+.div25 {
+  width: 25%;
+  border: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.div50 {
+  width: 50%;
+  border: solid;
+}
+
+/************************ Tablet ************************/
+@media (min-width: 481px) and (max-width: 768px) {
+  h1 {
+    font-size: 1.25em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  p {
+    font-size: 0.75em;
+  }
+}
+
+/************************ Mobile ************************/
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1em;
+  }
+  h3 {
+    font-size: .75em;
+  }
+  p {
+    font-size: 0.625em;
+  }
+}
